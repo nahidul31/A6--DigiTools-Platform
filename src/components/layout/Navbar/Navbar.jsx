@@ -44,7 +44,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 gap-8">{links}</ul>
       </div>
       <div className="navbar-end">
-        <div class="dropdown dropdown-end">
+        {/* <div className="dropdown dropdown-end">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
             <div class="indicator">
               <svg
@@ -65,7 +65,7 @@ const Navbar = () => {
               <span class="badge badge-sm indicator-item">8</span>
             </div>
           </div>
-        </div>
+        </div> */}
         <a className="btn">Button</a>
       </div>
     </div>

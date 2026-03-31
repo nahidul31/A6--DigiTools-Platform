@@ -25,7 +25,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="flex bg-[#7a22f8] text-white justify-center gap-20 items-center p-15 my-10">
+      <div className="flex bg-[#7a22f8] text-white justify-center gap-20 items-center p-15 my-10 text-center">
         <div>
           <h1 className="text-5xl font-bold">50k +</h1>
           <p className="text-gray-300">Active users</p>
@@ -38,7 +38,7 @@ const Banner = () => {
         <div className="divider divider-horizontal before:bg-gray-300 after:bg-gray-300"></div>
         <div>
           <h1 className="text-5xl font-bold">4.9</h1>
-          <p className="text-gray-300">Rating</p>
+          <p className="text-gray-300"> Rating</p>
         </div>
       </div>
     </div>
