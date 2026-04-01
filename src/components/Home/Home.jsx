@@ -6,7 +6,7 @@ import ThreeSteps from "./ThreeSteps/ThreeSteps";
 import TransparentPricing from "./TransparentPricing/TransparentPricing";
 import WorkFlowSection from "./WorkFlowSection/WorkFlowSection";
 import Footer from "../layout/Footer/Footer";
-
+import { ToastContainer, toast } from "react-toastify";
 const url = async () => {
   const res = await fetch(`${import.meta.env.BASE_URL}data.json`);
   const data = await res.json();
@@ -37,6 +37,7 @@ const Home = () => {
         <TransparentPricing></TransparentPricing>
         <WorkFlowSection></WorkFlowSection>
       </div>
+      <ToastContainer />
       <Footer></Footer>
     </div>
   );

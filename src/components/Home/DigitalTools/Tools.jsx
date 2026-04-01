@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Bounce, toast } from "react-toastify";
 
 const Tools = ({
   tool,
@@ -15,10 +16,31 @@ const Tools = ({
   const handleBuyNow = () => {
     const checkDuplicate = selectedCart.some((sl) => sl.id === tool.id);
     if (checkDuplicate) {
-      alert("already added");
+      toast.warn("Already Added", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
       return;
     }
     // console.log(checkDuplicate);
+    toast.success("Added Successfully", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
 
     const newCart = [...selectedCart, tool];
     const updateTotalCost = totalCost + tool.price;
