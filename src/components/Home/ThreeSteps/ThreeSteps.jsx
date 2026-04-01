@@ -3,7 +3,7 @@ import img2 from "/img/package.png";
 import img3 from "/img/rocket.png";
 const ThreeSteps = () => {
   return (
-    <div className="text-center p-10 lg:px-30">
+    <div className="text-center p-10 lg:px-30 pt-3">
       <h1 className="text-4xl font-bold">Get Started In 3 Steps </h1>
       <p className="mt-1">
         Start using premium digital tools in minutes, not hours

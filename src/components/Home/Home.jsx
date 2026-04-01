@@ -4,6 +4,8 @@ import Banner from "./Banner/Banner";
 import DigitalTools from "./DigitalTools/DigitalTools";
 import ThreeSteps from "./ThreeSteps/ThreeSteps";
 import TransparentPricing from "./TransparentPricing/TransparentPricing";
+import WorkFlowSection from "./WorkFlowSection/WorkFlowSection";
+import Footer from "../layout/Footer/Footer";
 
 const url = async () => {
   const res = await fetch(`${import.meta.env.BASE_URL}data.json`);
@@ -33,7 +35,9 @@ const Home = () => {
         </Suspense>
         <ThreeSteps></ThreeSteps>
         <TransparentPricing></TransparentPricing>
+        <WorkFlowSection></WorkFlowSection>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

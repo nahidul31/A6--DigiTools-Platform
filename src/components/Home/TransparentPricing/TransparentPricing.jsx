@@ -103,6 +103,9 @@ const TransparentPricing = () => {
 
         {/* card--------------2 */}
         <div className="card   bg-linear-to-r from-[#642ef7] to-[#9116fa] text-white shadow-sm h-full w-96   ">
+          <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+            <span className="badge badge-warning  px-4">Most Popular</span>
+          </div>
           <div className="card-body flex flex-col h-full ">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold">Pro (Most Popular)</h2>

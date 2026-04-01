@@ -46,7 +46,10 @@ const Tools = ({
             </span>
           </div>
           <div>
-            <img src={icon} alt="" />
+            <img
+              src={`${import.meta.env.BASE_URL}${icon.replace(/^\//, "")}`}
+              alt=""
+            />
           </div>
           <div className="space-y-3">
             <h2 className="text-3xl font-bold">{name}</h2>
