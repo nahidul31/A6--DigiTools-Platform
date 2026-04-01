@@ -5,7 +5,7 @@ const ThreeSteps = () => {
   return (
     <div className="text-center p-10 lg:px-30">
       <h1 className="text-4xl font-bold">Get Started In 3 Steps </h1>
-      <p className="mt-14">
+      <p className="mt-1">
         Start using premium digital tools in minutes, not hours
       </p>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20  mt-10">

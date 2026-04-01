@@ -3,9 +3,10 @@ import Navbar from "../layout/Navbar/Navbar";
 import Banner from "./Banner/Banner";
 import DigitalTools from "./DigitalTools/DigitalTools";
 import ThreeSteps from "./ThreeSteps/ThreeSteps";
+import TransparentPricing from "./TransparentPricing/TransparentPricing";
 
 const url = async () => {
-  const res = await fetch("/data.json");
+  const res = await fetch(`${import.meta.env.BASE_URL}data.json`);
   const data = await res.json();
   return data;
 };
@@ -31,6 +32,7 @@ const Home = () => {
           ></DigitalTools>
         </Suspense>
         <ThreeSteps></ThreeSteps>
+        <TransparentPricing></TransparentPricing>
       </div>
     </div>
   );
