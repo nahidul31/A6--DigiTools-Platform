@@ -32,7 +32,10 @@ const SelectedCart = ({
     <div className="bg-gray-100 p-8 rounded-2xl sm:flex justify-between items-center">
       <div className="flex  gap-5 items-center">
         <div className="bg-white p-5 rounded-full ">
-          <img src={icon} alt="" />
+          <img
+            src={`${import.meta.env.BASE_URL}${icon.replace(/^\//, "")}`}
+            alt=""
+          />
         </div>
         <div>
           <h1 className="text-2xl font-bold">{name}</h1>
