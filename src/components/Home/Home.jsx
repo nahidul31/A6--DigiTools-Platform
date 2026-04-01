@@ -2,6 +2,7 @@ import { Suspense, use, useState } from "react";
 import Navbar from "../layout/Navbar/Navbar";
 import Banner from "./Banner/Banner";
 import DigitalTools from "./DigitalTools/DigitalTools";
+import ThreeSteps from "./ThreeSteps/ThreeSteps";
 
 const url = async () => {
   const res = await fetch("/data.json");
@@ -29,6 +30,7 @@ const Home = () => {
             urlPromise={urlPromise}
           ></DigitalTools>
         </Suspense>
+        <ThreeSteps></ThreeSteps>
       </div>
     </div>
   );
