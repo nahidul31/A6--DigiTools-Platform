@@ -12,7 +12,7 @@
       "50+ writing templates",
       "Grammar checker"
     ],
-    "icon": "/products/writing_2327400 1.png"
+    "icon": "/products/writing.png"
   },
   {
     "id": 2,
@@ -23,7 +23,7 @@
     "tag": "popular",
     "tagType": "Popular",
     "features": ["2000+ templates", "Monthly updates", "Commercial license"],
-    "icon": "/public/products/design-tool.png"
+    "icon": "/products/design-tool.png"
   },
   {
     "id": 3,
@@ -34,7 +34,7 @@
     "tag": "new",
     "tagType": "New",
     "features": ["10M+ assets", "Commercial use", "No attribution"],
-    "icon": "/public/products/shopping-cart.png"
+    "icon": "/products/shopping-cart.png"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "tag": "popular",
     "tagType": "Popular",
     "features": ["50+ automations", "API access", "Custom workflows"],
-    "icon": "/public/products/operation.png"
+    "icon": "/products/operation.png"
   },
   {
     "id": 5,
@@ -56,7 +56,7 @@
     "tag": "new",
     "tagType": "New",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "/public/products/portfolio.png"
+    "icon": "/products/portfolio.png"
   },
   {
     "id": 6,
@@ -67,6 +67,6 @@
     "tag": "best-seller",
     "tagType": "Best Seller",
     "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
-    "icon": "/public/products/social-media.png"
+    "icon": "/products/social-media.png"
   }
 ]
