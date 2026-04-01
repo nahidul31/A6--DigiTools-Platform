@@ -2,9 +2,9 @@ import { Suspense, use, useState } from "react";
 import Navbar from "../layout/Navbar/Navbar";
 import Banner from "./Banner/Banner";
 import DigitalTools from "./DigitalTools/DigitalTools";
-import ThreeSteps from "./ThreeSteps/ThreeSteps";
-import TransparentPricing from "./TransparentPricing/TransparentPricing";
-import WorkFlowSection from "./WorkFlowSection/WorkFlowSection";
+// import ThreeSteps from "./ThreeSteps/ThreeSteps";
+// import TransparentPricing from "./TransparentPricing/TransparentPricing";
+// import WorkFlowSection from "./WorkFlowSection/WorkFlowSection";
 import Footer from "../layout/Footer/Footer";
 import { ToastContainer, toast } from "react-toastify";
 const url = async () => {
@@ -33,9 +33,9 @@ const Home = () => {
             urlPromise={urlPromise}
           ></DigitalTools>
         </Suspense>
-        <ThreeSteps></ThreeSteps>
+        {/* <ThreeSteps></ThreeSteps>
         <TransparentPricing></TransparentPricing>
-        <WorkFlowSection></WorkFlowSection>
+        <WorkFlowSection></WorkFlowSection> */}
       </div>
       <ToastContainer />
       <Footer></Footer>

@@ -1,6 +1,9 @@
 import { use, useState } from "react";
 import Tools from "./Tools";
 import SelectedCart from "./SelectedCart";
+import ThreeSteps from "../ThreeSteps/ThreeSteps";
+import TransparentPricing from "../TransparentPricing/TransparentPricing";
+import WorkFlowSection from "../WorkFlowSection/WorkFlowSection";
 // handleCntNumberOfSelectedCart,
 const DigitalTools = ({ urlPromise, setSelectedCarts, selectedCart }) => {
   const allTools = use(urlPromise);
@@ -43,18 +46,23 @@ const DigitalTools = ({ urlPromise, setSelectedCarts, selectedCart }) => {
       {/* load data -------- */}
       <div>
         {toolsBtn ? (
-          <div className="  lg:p-20 lg:px-30 grid sm:grid-cols-2 lg:grid-cols-3 gap-16">
-            {allTools.map((tool) => (
-              <Tools
-                totalCost={totalCost}
-                setTotalCost={setTotalCost}
-                tool={tool}
-                key={tool.id}
-                setSelectedCarts={setSelectedCarts}
-                selectedCart={selectedCart}
-              ></Tools>
-            ))}
-          </div>
+          <>
+            <div className="  lg:p-20 lg:px-30 grid sm:grid-cols-2 lg:grid-cols-3 gap-16">
+              {allTools.map((tool) => (
+                <Tools
+                  totalCost={totalCost}
+                  setTotalCost={setTotalCost}
+                  tool={tool}
+                  key={tool.id}
+                  setSelectedCarts={setSelectedCarts}
+                  selectedCart={selectedCart}
+                ></Tools>
+              ))}
+            </div>
+            <ThreeSteps></ThreeSteps>
+            <TransparentPricing></TransparentPricing>
+            <WorkFlowSection></WorkFlowSection>
+          </>
         ) : (
           <div className=" lg:p-26 pt-10 ">
             <h1 className="text-3xl font-bold text-center">Selected Cart</h1>
