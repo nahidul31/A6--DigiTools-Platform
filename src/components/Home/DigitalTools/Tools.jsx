@@ -1,22 +1,49 @@
 import { useState } from "react";
 
-const Tools = ({ tool, setSelectedCarts, selectedCart }) => {
-  const { id, name, description, price, tag, tagType, features, icon, period } =
+const Tools = ({
+  tool,
+  setSelectedCarts,
+  selectedCart,
+  totalCost,
+  setTotalCost,
+}) => {
+  const { id, name, description, price, tagType, features, icon, period } =
     tool;
   //   console.log(tool);
+
   const [buyOp, setBuyOp] = useState(false);
   const handleBuyNow = () => {
-    const newCart = [...selectedCart, tool];
-    setSelectedCarts(newCart);
+    const checkDuplicate = selectedCart.some((sl) => sl.id === tool.id);
+    if (checkDuplicate) {
+      alert("already added");
+      return;
+    }
+    // console.log(checkDuplicate);
 
+    const newCart = [...selectedCart, tool];
+    const updateTotalCost = totalCost + tool.price;
+    setTotalCost(updateTotalCost);
+
+    setSelectedCarts(newCart);
+    // setSelectedItems(newCart.length);
     setBuyOp(true);
   };
   return (
-    <div>
-      <div className="card w-96 bg-base-100 shadow-sm h-full ">
+    <div className="hover-3d">
+      <div className="card  bg-base-100 shadow-sm h-full  ">
         <div className="card-body flex flex-col  ">
           <div className=" flex justify-end">
-            <span className="badge badge-xs badge-warning ">{tagType}</span>
+            <span
+              className={`badge badge-xs  ${
+                tagType === "Best Seller"
+                  ? " badge-soft badge-warning"
+                  : tagType === "Popular"
+                    ? "badge-soft badge-info"
+                    : "badge-soft badge-success"
+              } `}
+            >
+              {tagType}
+            </span>
           </div>
           <div>
             <img src={icon} alt="" />
@@ -50,15 +77,11 @@ const Tools = ({ tool, setSelectedCarts, selectedCart }) => {
             })}
           </ul>
           <div onClick={handleBuyNow} className="mt-6">
-            {buyOp ? (
-              <button className="btn  btn-block  text-white rounded-2xl bg-green-400">
-                <span></span>Added to Cart
-              </button>
-            ) : (
-              <button className="btn  btn-block  text-white rounded-2xl bg-linear-to-r from-[#642ef7] to-[#9116fa]">
-                Buy Now
-              </button>
-            )}
+            <button
+              className={`btn  btn-block  text-white rounded-2xl ${buyOp ? "bg-green-400" : "bg-linear-to-r from-[#642ef7] to-[#9116fa]"} `}
+            >
+              {buyOp ? "Added Cart" : "Buy Now"}
+            </button>
           </div>
         </div>
       </div>
