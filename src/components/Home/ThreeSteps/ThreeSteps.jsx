@@ -1,6 +1,6 @@
-import img1 from "../../../assets/img/user.png";
-import img2 from "../../../assets/img/package.png";
-import img3 from "../../../assets/img/rocket.png";
+import img1 from "/img/user.png";
+import img2 from "/img/package.png";
+import img3 from "/img/rocket.png";
 const ThreeSteps = () => {
   return (
     <div className="text-center p-10 lg:px-30">
@@ -38,7 +38,7 @@ const ThreeSteps = () => {
           </div>
           <div className="p-7 space-y-4 flex flex-col justify-center items-center">
             <div className="  bg-violet-200 w-20 h-20 rounded-full p-4  r">
-              <img src={img1} alt="" />
+              <img src={img2} alt="" />
             </div>
             <div className="space-y-2">
               <h1 className="text-2xl font-bold">Choose Products</h1>
@@ -57,7 +57,7 @@ const ThreeSteps = () => {
           </div>
           <div className="p-7 space-y-4 flex flex-col justify-center items-center">
             <div className="  bg-violet-200 w-20 h-20 rounded-full p-4  r">
-              <img src={img1} alt="" />
+              <img src={img3} alt="" />
             </div>
             <div className="space-y-2">
               <h1 className="text-2xl font-bold">Start Creating</h1>

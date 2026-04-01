@@ -1,5 +1,5 @@
-import banner from "../../../assets/img/banner.png";
-import playBtn from "../../../assets/img/Play.png";
+import banner from "/img/banner.png";
+import playBtn from "/img/Play.png";
 const Banner = () => {
   return (
     <div>
